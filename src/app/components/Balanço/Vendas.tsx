@@ -4,7 +4,7 @@ import { BiSolidEdit, BiTrash } from "react-icons/bi";
 function Vendas() {
   const teste = 10;
 
-  //POSSO FAZER DUAS ABAS: UMA MOSTRA O BALANÇO E OU AS TRANSAÇÕES, POR DATA
+  //POSSO FAZER DUAS ABAS: UMA MOSTRA O BALANÇO E A OUTRA AS TRANSAÇÕES, POR DATA
 
   return (
     <div className="overflow-x-auto mt-5 border">
@@ -28,16 +28,11 @@ function Vendas() {
               })}
             </td>
             <td className="p-2 font-medium text-center">10</td>
-            <td className="p-2 font-medium flex items-center justify-center gap-2 text-xl">
-              <BiSolidEdit
-                title="Editar"
-                className="cursor-pointer hover:text-green-500 transition-all"
-              />
-              /
-              <BiTrash
-                title="Excluir"
-                className="cursor-pointer hover:text-red-500 transition-all"
-              />
+            <td className="p-2 font-medium text-center">
+              {(teste * 10).toLocaleString("pt-br", {
+                style: "currency",
+                currency: "BRL",
+              })}
             </td>
           </tr>
         </tbody>
