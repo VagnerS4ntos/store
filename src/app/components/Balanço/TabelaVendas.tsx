@@ -1,7 +1,7 @@
 import React from "react";
 import { BiSolidEdit, BiTrash } from "react-icons/bi";
 
-function Vendas() {
+function TabelaVendas() {
   const teste = 10;
 
   //POSSO FAZER DUAS ABAS: UMA MOSTRA O BALANÇO E A OUTRA AS TRANSAÇÕES, POR DATA
@@ -41,4 +41,4 @@ function Vendas() {
   );
 }
 
-export default Vendas;
+export default TabelaVendas;
